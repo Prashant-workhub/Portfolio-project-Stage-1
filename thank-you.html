@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You | Prashant Singh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="success-screen">
+      <section class="glass success-card">
+        <div class="success-badge">
+          <i class="fa-solid fa-circle-check"></i>
+          Message received
+        </div>
+
+        <h1 class="success-title">
+          Thanks for reaching out, <span class="accent">I'll reply soon</span>.
+        </h1>
+
+        <p class="success-copy">
+          Your message has been sent successfully through Web3Forms. I'll read
+          it, review the details, and get back to you as soon as possible.
+        </p>
+
+        <div class="success-meta">
+          <div class="success-chip">
+            <strong>Usually checked fast</strong>
+            <span>Most messages get a reply within 24 to 48 hours.</span>
+          </div>
+          <div class="success-chip">
+            <strong>Need it sooner?</strong>
+            <span>Send a direct email and I'll see it right away.</span>
+          </div>
+          <div class="success-chip">
+            <strong>What happens next</strong>
+            <span>I'll respond with the next steps or any questions.</span>
+          </div>
+        </div>
+
+        <div class="success-actions">
+          <a class="btn primary" href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Back to Portfolio
+          </a>
+          <a class="btn ghost" href="mailto:devmail.prashant@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            Email Me Directly
+          </a>
+        </div>
+
+        <p class="success-note">
+          If you don't hear back, check your spam folder or message me again on
+          LinkedIn.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Prashant Singh. Built with code, coffee,
+        and late-night debugging.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

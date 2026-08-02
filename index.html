@@ -394,35 +394,55 @@
             </p>
           </div>
 
-          <form class="contact-card glass contact-form">
+          <div class="contact-card glass contact-form">
             <h3>Quick Message</h3>
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
+            <form action="https://api.web3forms.com/submit" method="POST">
               <input
-                id="email"
-                type="email"
-                placeholder="you@example.com"
-                required
+                type="hidden"
+                name="access_key"
+                value="ca558c8e-a458-4a40-b536-b7f7619ffcf9"
               />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                rows="4"
-                placeholder="Tell me about the project..."
-                required
-              ></textarea>
-            </div>
-            <button class="btn primary full" type="submit" id="contact-submit">
-              <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
-            </button>
-            <p class="form-note" id="form-note"></p>
-          </form>
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Tell me about the project..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                class="btn primary full"
+                type="submit"
+                id="contact-submit"
+              >
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <p class="form-note" id="form-note"></p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
